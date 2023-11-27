@@ -1,11 +1,17 @@
 #include <iostream>
 #include <unordered_map>
+#include <string>
 
 bool canConstruct(std::string ransomLetter, std::string paper);
 
 int main() {
-	std::cout << canConstruct("aa", "ab") << std::endl; 
-    std::cout << canConstruct("aa", "aab") << std::endl;
+	std::string paper;
+	std::string ransomLetter;
+
+	std::cin >> paper;
+	std::cin >> ransomLetter;
+
+	std::cout << canConstruct(ransomLetter, paper) << std::endl; 
 
 	return 0;
 }
@@ -19,7 +25,7 @@ bool canConstruct(std::string ransomLetter, std::string paper) {
 
     for (char c : ransomLetter) {
         if (charCount.find(c) == charCount.end() || charCount[c] == 0) {
-            return false; 
+            return false;
         } else {
             charCount[c]--;
         }
