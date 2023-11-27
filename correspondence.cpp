@@ -5,6 +5,8 @@
 bool canConstruct(std::string ransomLetter, std::string paper);
 
 int main() {
+    std::cout << std::boolalpha;
+
 	std::string paper;
 	std::string ransomLetter;
 
