@@ -30,6 +30,7 @@ The program consists of two main functions:
 magazine
 ransom
 ### Output
+true
 
 
 ## Note
